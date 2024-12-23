@@ -31,7 +31,7 @@
       "user": {
         "title": "Termiske komfortindstillinger",
         "data": {
-          "name": "Name",
+          "name": "Navn",
           "temperature_sensor": "Temperatursensor",
           "humidity_sensor": "Fugtighedssensor",
           "poll": "Aktiver polling",
@@ -44,6 +44,12 @@
   },
   "entity": {
     "sensor": {
+      "absolute_humidity": {
+        "name": "Absolut Fugtighed"
+      },
+      "dew_point": {
+        "name": "Dugpunkt"
+      },
       "dew_point_perception": {
         "state": {
           "dry": "Lidt tørt for nogle",
@@ -56,13 +62,20 @@
           "severely_high": "Alvorligt høj, endda dødelig for astmarelaterede sygdomme"
         }
       },
+      "frost_point": {
+        "name": "Fryse punkt"
+      },
       "frost_risk": {
+        "name": "Risiko for frost",
         "state": {
           "no_risk": "Ingen risiko",
           "unlikely": "Usandsynlig",
           "probable": "Sandsynlig",
           "high": "Høj sandsynlighed"
         }
+      },
+      "heat_index": {
+        "name": "Varme indeks"
       },
       "humidex_perception": {
         "state": {
@@ -73,6 +86,9 @@
           "dangerous_discomfort": "Farligt ubehag",
           "heat_stroke": "Hedeslag muligt"
         }
+      },
+      "moist_air_enthalpy": {
+        "name": "Fugtig luft entalpi"
       },
       "relative_strain_perception": {
         "state": {
@@ -85,6 +101,7 @@
         }
       },
       "summer_scharlau_perception": {
+        "name": "Sommer Scharlau procent",
         "state": {
           "outside_calculable_range": "Uden for det beregnelige område",
           "comfortable": "Komfortabel",
@@ -94,6 +111,7 @@
         }
       },
       "winter_scharlau_perception": {
+        "name": "Vinter Scharlau procent",
         "state": {
           "outside_calculable_range": "Uden for det beregnelige område",
           "comfortable": "Komfortabel",
@@ -102,7 +120,11 @@
           "highly_uncomfortable": "Meget ubehageligt"
         }
       },
+      "summer_simmer_index": {
+        "name": "Sommer Simmer indeks"
+      },
       "summer_simmer_perception": {
+        "name": "Sommer Simmer Procent",
         "state": {
           "cool": "Køligt",
           "slightly_cool": "Lidt køligt",
